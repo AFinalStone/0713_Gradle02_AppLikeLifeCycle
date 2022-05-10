@@ -13,10 +13,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
-        //引入本地仓库中的插件依赖
-        classpath 'com.example.plugin:exapmplepluginlocal:1.0.0'
-        //组件化模块生命周期管理插件依赖
-        classpath 'com.afs.stone:applikelifecyclepluginlocal:1.0.0'
     }
 }
 
