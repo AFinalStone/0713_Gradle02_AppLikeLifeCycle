@@ -183,13 +183,13 @@ task clean(type: Delete) {
 }
 ```
 
-### 2.8、在模块中使用我们的自定义插件
+### 2.8、在app模块中使用我们的自定义插件
 
 ```groovy
 apply plugin: 'com.example.plugin'
 ```
 
-运行模块的gradle，成功看到日志信息如下：
+运行app模块的gradle，成功看到日志信息如下：
 
 ```cmd
 > Configure project :app

@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
-//apply plugin: myPlugin
+apply plugin: MyFirstPlugin
 apply plugin: 'com.example.plugin'
+apply plugin: 'com.afs.applike.lefcycle'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
@@ -33,14 +34,14 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
 }
 
-class myPlugin implements Plugin<Project> {
+class MyFirstPlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
-        println("myPlugin 执行了")
+        println("MyFirstPlugin 执行了")
 
-        project.task("myTask") {
+        project.task("MyFirstTask") {
             doLast {
-                println("myTask执行了")
+                println("MyFirstTask执行了")
             }
         }
     }
