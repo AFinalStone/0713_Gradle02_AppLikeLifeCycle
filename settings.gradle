@@ -1,0 +1,3 @@
+include ':app'
+//include ':applike-lifecycle-plugin'
+include ':plugin-example'
