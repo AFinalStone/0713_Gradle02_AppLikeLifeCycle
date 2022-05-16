@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+}
+dependencies {
+    implementation fileTree(dir: 'libs', includes: ['*.jar'])
+    implementation gradleApi() //必须
+//    implementation localGroovy() //必须
+    //如果要使用android的API，需要引用这个，实现Transform的时候会用到
+//    implementation 'com.android.tools.build:gradle:3.5.3'
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
