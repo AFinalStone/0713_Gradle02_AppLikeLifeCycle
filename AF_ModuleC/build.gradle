@@ -10,11 +10,13 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
-        javaCompileOptions {
+
+        javaCompileOptions{
             annotationProcessorOptions {
                 includeCompileClasspath true
             }
         }
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }

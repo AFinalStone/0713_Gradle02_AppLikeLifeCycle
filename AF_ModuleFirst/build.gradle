@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+
     //基础组件
     implementation rootProject.ext.dependencies["appcompat"]
     implementation rootProject.ext.dependencies["material"]
