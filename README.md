@@ -85,4 +85,7 @@ apply plugin: 'com.afs.applike.lefcycle'
 ------组件化AppLike生命周期管理插件被执行-------
 ```
 
-## 二、构建自定义脚本插件框架
+## 二、Gradle Transform
+
+上面我们只是通过插件打印了一行日志，在实际开发中并没有什么意义，那么怎么通过插件在打包前去扫描所有的class文件呢，幸运的是官方给我们提供了 Gradle
+Transform技术，简单来说就是能够让开发者在项目构建阶段即由class到dex转换期间修改class文件，Transform阶段会扫描所有的class文件和资源文件，具体技术我这里不详细展开，下面通过伪代码部分说下我的思路。

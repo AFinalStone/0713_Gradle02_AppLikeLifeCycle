@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.applike.lifecycle'
+//apply plugin: 'com.applike.lifecycle'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
